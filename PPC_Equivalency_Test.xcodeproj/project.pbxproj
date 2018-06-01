@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EEB03370201F4F81002DF913 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEB0336F201F4F81002DF913 /* main.cpp */; };
+		EEFD18772021EF7C0082EE65 /* Atom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEFD18762021EF7C0082EE65 /* Atom.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +24,24 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EE535E3A202C63EA00CF4852 /* Extend_Cell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Extend_Cell.h; sourceTree = "<group>"; };
+		EE535E3B202C715100CF4852 /* Extend_Cell_And_Cloud.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Extend_Cell_And_Cloud.h; sourceTree = "<group>"; };
+		EE535E3C202CADCB00CF4852 /* Sort_Min_Distances.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sort_Min_Distances.h; sourceTree = "<group>"; };
+		EE86F6C42028CD92009DA8CC /* Read_Atom_Coords.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Read_Atom_Coords.h; sourceTree = "<group>"; };
+		EE86F6C52028E2EA009DA8CC /* Print_Summary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Print_Summary.h; sourceTree = "<group>"; };
+		EE86F6C62028E564009DA8CC /* Min_Cell_Length.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Min_Cell_Length.h; sourceTree = "<group>"; };
 		EEB0336C201F4F81002DF913 /* PPC_Equivalency_Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PPC_Equivalency_Test; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEB0336F201F4F81002DF913 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		EEFD18742021EE790082EE65 /* Min_Dist_Within_Cell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Min_Dist_Within_Cell.h; sourceTree = "<group>"; };
+		EEFD18752021EECD0082EE65 /* Atom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Atom.h; sourceTree = "<group>"; };
+		EEFD18762021EF7C0082EE65 /* Atom.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Atom.cpp; sourceTree = "<group>"; };
+		EEFD18782021F4220082EE65 /* Frac_To_Cart_Coords.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Frac_To_Cart_Coords.h; sourceTree = "<group>"; };
+		EEFD1879202231540082EE65 /* Transformation_Matrix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Transformation_Matrix.h; sourceTree = "<group>"; };
+		EEFD187A202233B10082EE65 /* Cell_Volume.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cell_Volume.h; sourceTree = "<group>"; };
+		EEFE4084202B4F40004D4D42 /* Read_Cell_Shape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Read_Cell_Shape.h; sourceTree = "<group>"; };
+		EEFE4085202B575D004D4D42 /* Extend_Cloud.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Extend_Cloud.h; sourceTree = "<group>"; };
+		EEFE828420232E5D003E36E2 /* Subdivide_Cell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Subdivide_Cell.h; sourceTree = "<group>"; };
+		EEFE828520236480003E36E2 /* Min_Dist_Within_Nbhd_Cells.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Min_Dist_Within_Nbhd_Cells.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +74,23 @@
 		EEB0336E201F4F81002DF913 /* PPC_Equivalency_Test */ = {
 			isa = PBXGroup;
 			children = (
+				EEFD18762021EF7C0082EE65 /* Atom.cpp */,
+				EEFD18752021EECD0082EE65 /* Atom.h */,
+				EEFD187A202233B10082EE65 /* Cell_Volume.h */,
+				EE535E3B202C715100CF4852 /* Extend_Cell_And_Cloud.h */,
+				EE535E3A202C63EA00CF4852 /* Extend_Cell.h */,
+				EEFE4085202B575D004D4D42 /* Extend_Cloud.h */,
+				EEFD18782021F4220082EE65 /* Frac_To_Cart_Coords.h */,
 				EEB0336F201F4F81002DF913 /* main.cpp */,
+				EE86F6C62028E564009DA8CC /* Min_Cell_Length.h */,
+				EEFD18742021EE790082EE65 /* Min_Dist_Within_Cell.h */,
+				EEFE828520236480003E36E2 /* Min_Dist_Within_Nbhd_Cells.h */,
+				EE86F6C52028E2EA009DA8CC /* Print_Summary.h */,
+				EE86F6C42028CD92009DA8CC /* Read_Atom_Coords.h */,
+				EEFE4084202B4F40004D4D42 /* Read_Cell_Shape.h */,
+				EE535E3C202CADCB00CF4852 /* Sort_Min_Distances.h */,
+				EEFE828420232E5D003E36E2 /* Subdivide_Cell.h */,
+				EEFD1879202231540082EE65 /* Transformation_Matrix.h */,
 			);
 			path = PPC_Equivalency_Test;
 			sourceTree = "<group>";
@@ -119,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEFD18772021EF7C0082EE65 /* Atom.cpp in Sources */,
 				EEB03370201F4F81002DF913 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,7 +266,33 @@
 		EEB03374201F4F81002DF913 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/Cellar/gemmi/include,
+					/usr/local/Cellar/gemmi/third_party,
+					/usr/local/Cellar/opencv/3.3.0_3/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/opencv/3.3.0_3/lib;
+				OTHER_LDFLAGS = (
+					"-lopencv_calib3d",
+					"-lopencv_core",
+					"-lopencv_features2d",
+					"-lopencv_flann",
+					"-lopencv_highgui",
+					"-lopencv_imgcodecs",
+					"-lopencv_imgproc",
+					"-lopencv_ml",
+					"-lopencv_objdetect",
+					"-lopencv_photo",
+					"-lopencv_shape",
+					"-lopencv_stitching",
+					"-lopencv_superres",
+					"-lopencv_video",
+					"-lopencv_videoio",
+					"-lopencv_videostab",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -240,7 +300,33 @@
 		EEB03375201F4F81002DF913 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/Cellar/gemmi/include,
+					/usr/local/Cellar/gemmi/third_party,
+					/usr/local/Cellar/opencv/3.3.0_3/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/opencv/3.3.0_3/lib;
+				OTHER_LDFLAGS = (
+					"-lopencv_calib3d",
+					"-lopencv_core",
+					"-lopencv_features2d",
+					"-lopencv_flann",
+					"-lopencv_highgui",
+					"-lopencv_imgcodecs",
+					"-lopencv_imgproc",
+					"-lopencv_ml",
+					"-lopencv_objdetect",
+					"-lopencv_photo",
+					"-lopencv_shape",
+					"-lopencv_stitching",
+					"-lopencv_superres",
+					"-lopencv_video",
+					"-lopencv_videoio",
+					"-lopencv_videostab",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
