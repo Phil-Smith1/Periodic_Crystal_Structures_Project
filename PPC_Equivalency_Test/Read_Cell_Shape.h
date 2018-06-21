@@ -8,7 +8,7 @@
 using namespace std;
 namespace cif = gemmi::cif;
 
-void Read_Cell_Shape ( cif::Block *block, vector<pair<string, double>>& cell_shape )
+void Read_Cell_Shape ( cif::Block * block, vector<pair<string, double>>& cell_shape )
 {
     vector<string> labels;
     labels.reserve( 6 );
@@ -25,7 +25,7 @@ void Read_Cell_Shape ( cif::Block *block, vector<pair<string, double>>& cell_sha
     
     cell_shape.reserve( 6 );
     
-    for (unsigned counter = 0; counter < 6; ++counter)
+    for (int counter = 0; counter < 6; ++counter)
     {
         double value = stod( row.operator[]( counter ) );
         cell_shape.push_back( pair<string, double>( labels[counter], value ) );

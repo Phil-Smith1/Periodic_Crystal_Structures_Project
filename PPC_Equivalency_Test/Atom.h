@@ -8,7 +8,7 @@ using namespace cv;
 
 class Atom
 {
-public:
+    public:
     
     int index;
     Point3d frac_coords;

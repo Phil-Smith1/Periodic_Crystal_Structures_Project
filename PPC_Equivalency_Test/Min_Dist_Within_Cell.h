@@ -8,13 +8,21 @@
 
 using namespace std;
 
-void Min_Dist_Within_Cell ( vector<Atom>const& cloud, vector<pair<double, pair<Atom, Atom>>>& min_dist )
+void Min_Dist_Within_Cell ( vector<Atom>const& cloud, size_t unit_cloud_size, int num_distances, vector<pair<double, pair<Atom, Atom>>>& min_dist )
 {
+    min_dist.clear();
+    min_dist.reserve( num_distances );
+    
+    for (int counter = 0; counter < num_distances; ++counter)
+    {
+        min_dist.push_back( pair<double, pair<Atom, Atom>>( 1e10, pair<Atom, Atom>( cloud[0], cloud[0] ) ) );
+    }
+    
     size_t cloud_size = cloud.size();
     
-    for (unsigned counter_1 = 0; counter_1 < cloud_size; ++counter_1)
+    for (int counter_1 = 0; counter_1 < unit_cloud_size; ++counter_1)
     {
-        for (unsigned counter_2 = counter_1 + 1; counter_2 < cloud_size; ++counter_2)
+        for (int counter_2 = counter_1 + 1; counter_2 < cloud_size; ++counter_2)
         {
             double distance = norm( cloud[counter_1].cart_coords - cloud[counter_2].cart_coords );
             

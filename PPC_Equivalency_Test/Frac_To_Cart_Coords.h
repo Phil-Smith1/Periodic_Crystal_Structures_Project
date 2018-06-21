@@ -4,7 +4,7 @@
 
 #include "Atom.h"
 
-void Frac_To_Cart_Coords ( double **matrix, Atom& atom )
+void Frac_To_Cart_Coords ( double ** matrix, Atom& atom )
 {
     atom.cart_coords.x = matrix[0][0] * atom.frac_coords.x + matrix[0][1] * atom.frac_coords.y + matrix[0][2] * atom.frac_coords.z;
     atom.cart_coords.y = matrix[1][0] * atom.frac_coords.x + matrix[1][1] * atom.frac_coords.y + matrix[1][2] * atom.frac_coords.z;

@@ -10,7 +10,7 @@
 using namespace std;
 namespace cif = gemmi::cif;
 
-void Read_Atom_Coords ( cif::Block *block, double **matrix, vector<Atom>& cloud )
+void Read_Atom_Coords ( cif::Block * block, double ** matrix, vector<Atom>& cloud )
 {
     vector<string> labels;
     labels.push_back( "_atom_site_fract_x" );
@@ -23,7 +23,7 @@ void Read_Atom_Coords ( cif::Block *block, double **matrix, vector<Atom>& cloud 
     
     cloud.reserve( num_atoms );
     
-    for (unsigned counter = 0; counter < num_atoms; ++counter)
+    for (int counter = 0; counter < num_atoms; ++counter)
     {
         cif::Table::Row row = table.operator[]( counter );
         

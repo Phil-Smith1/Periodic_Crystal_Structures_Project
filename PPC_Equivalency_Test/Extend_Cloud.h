@@ -2,12 +2,13 @@
 
 #include "Frac_To_Cart_Coords.h"
 
-void Extend_Cloud ( int *cell_length_scale_factor, double **matrix, vector<Atom>const& cloud, vector<Atom>& extended_cloud )
+void Extend_Cloud ( int *cell_length_scale_factor, double ** matrix, vector<Atom>const& cloud, vector<Atom>& extended_cloud )
 {
     int product_scale_factor = cell_length_scale_factor[0] * cell_length_scale_factor[1] * cell_length_scale_factor[2];
     
     size_t cloud_size = cloud.size();
     
+    extended_cloud.clear();
     extended_cloud.reserve( product_scale_factor * cloud_size );
     
     unsigned counter_1 = 0;
@@ -22,7 +23,6 @@ void Extend_Cloud ( int *cell_length_scale_factor, double **matrix, vector<Atom>
                 {
                     extended_cloud.push_back( Atom( counter_1, c.frac_coords + Point3d( counter_4, counter_3, counter_2 ) ) );
                     Frac_To_Cart_Coords( matrix, extended_cloud[counter_1] );
-                    cout << extended_cloud[counter_1].frac_coords << endl;
                     ++counter_1;
                 }
             }

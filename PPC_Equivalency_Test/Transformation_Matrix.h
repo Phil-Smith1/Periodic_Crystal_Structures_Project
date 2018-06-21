@@ -2,7 +2,7 @@
 
 #include "Cell_Volume.h"
 
-void Transformation_Matrix ( vector<pair<string, double>>const& cell_shape, double **matrix )
+void Transformation_Matrix ( vector<pair<string, double>>const& cell_shape, double ** matrix )
 {
     matrix[0][0] = cell_shape[0].second;
     matrix[0][1] = cell_shape[1].second * cos( pi * cell_shape[5].second / (double)180 );

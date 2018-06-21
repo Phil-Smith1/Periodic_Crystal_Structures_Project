@@ -30,6 +30,7 @@
 		EE86F6C42028CD92009DA8CC /* Read_Atom_Coords.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Read_Atom_Coords.h; sourceTree = "<group>"; };
 		EE86F6C52028E2EA009DA8CC /* Print_Summary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Print_Summary.h; sourceTree = "<group>"; };
 		EE86F6C62028E564009DA8CC /* Min_Cell_Length.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Min_Cell_Length.h; sourceTree = "<group>"; };
+		EEA9432620DBF37000B35CCB /* Obtain_Cloud_Of_T2_Centres.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Obtain_Cloud_Of_T2_Centres.h; sourceTree = "<group>"; };
 		EEB0336C201F4F81002DF913 /* PPC_Equivalency_Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PPC_Equivalency_Test; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEB0336F201F4F81002DF913 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		EEFD18742021EE790082EE65 /* Min_Dist_Within_Cell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Min_Dist_Within_Cell.h; sourceTree = "<group>"; };
@@ -82,6 +83,7 @@
 				EEFE4085202B575D004D4D42 /* Extend_Cloud.h */,
 				EEFD18782021F4220082EE65 /* Frac_To_Cart_Coords.h */,
 				EEB0336F201F4F81002DF913 /* main.cpp */,
+				EEA9432620DBF37000B35CCB /* Obtain_Cloud_Of_T2_Centres.h */,
 				EE86F6C62028E564009DA8CC /* Min_Cell_Length.h */,
 				EEFD18742021EE790082EE65 /* Min_Dist_Within_Cell.h */,
 				EEFE828520236480003E36E2 /* Min_Dist_Within_Nbhd_Cells.h */,
