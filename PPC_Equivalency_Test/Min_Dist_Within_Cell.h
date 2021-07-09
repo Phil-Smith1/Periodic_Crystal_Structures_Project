@@ -26,7 +26,7 @@ void Min_Dist_Within_Cell ( vector<Atom>const& cloud, size_t unit_cloud_size, in
         {
             double distance = norm( cloud[counter_1].cart_coords - cloud[counter_2].cart_coords );
             
-            if (distance < min_dist[0].first)
+            if (distance < min_dist[0].first + 1e-10)
             {
                 min_dist[0] = pair<double, pair<Atom, Atom>>( distance, pair<Atom, Atom>( cloud[counter_1], cloud[counter_2] ) );
                 

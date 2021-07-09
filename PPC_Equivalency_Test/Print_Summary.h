@@ -22,6 +22,20 @@ void Print_Info ( int iteration, vector<pair<double, pair<Atom, Atom>>>const& mi
         else if (counter % 10 == 3 && counter % 100 != 13) cout << "rd";
         else cout << "th";
         cout << " minimum distance is " << iter->first << "." << endl;
+        
+        Point3d v = iter->second.first.cart_coords - iter->second.second.cart_coords;
+        
+        //if (v.x < -tiny_num) v *= -1;
+        
+        /*if (v.x < - tiny_num) v.x += 100;
+        if (v.y < - tiny_num) v.y += 100;
+        if (v.z < - tiny_num) v.z += 100;*/
+        
+        if (v.x < - tiny_num) v.x *= -1;
+        if (v.y < - tiny_num) v.y *= -1;
+        if (v.z < - tiny_num) v.z *= -1;
+        
+        cout << v << endl;
     }
     
     cout << endl;

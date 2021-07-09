@@ -274,9 +274,9 @@
 				HEADER_SEARCH_PATHS = (
 					/usr/local/Cellar/gemmi/include,
 					/usr/local/Cellar/gemmi/third_party,
-					/usr/local/Cellar/opencv/3.3.0_3/include,
+					/usr/local/Cellar/opencv/4.3.0_4/include/opencv4,
 				);
-				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/opencv/3.3.0_3/lib;
+				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/opencv/4.3.0_4/lib;
 				OTHER_LDFLAGS = (
 					"-lopencv_calib3d",
 					"-lopencv_core",
@@ -308,9 +308,9 @@
 				HEADER_SEARCH_PATHS = (
 					/usr/local/Cellar/gemmi/include,
 					/usr/local/Cellar/gemmi/third_party,
-					/usr/local/Cellar/opencv/3.3.0_3/include,
+					/usr/local/Cellar/opencv/4.3.0_4/include/opencv4,
 				);
-				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/opencv/3.3.0_3/lib;
+				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/opencv/4.3.0_4/lib;
 				OTHER_LDFLAGS = (
 					"-lopencv_calib3d",
 					"-lopencv_core",

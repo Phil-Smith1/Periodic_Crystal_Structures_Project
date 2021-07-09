@@ -45,13 +45,13 @@ void Min_Dist_Within_Nbhd_Cells ( int * cell_length_scale_factor, double ** matr
             Frac_To_Cart_Coords( matrix, shifted_cloud[counter_2] );
         }
         
-        for (int counter_1 = 0; counter_1 < 2; ++counter_1)
+        for (int counter_1 = 0; counter_1 < cloud_size; ++counter_1)
         {
             for (auto s : shifted_cloud)
             {
                 double distance = norm( cloud[counter_1].cart_coords - s.cart_coords );
                 
-                if (distance < min_dist[0].first)
+                if (distance < min_dist[0].first + 1e-10)
                 {
                     min_dist[0] = pair<double, pair<Atom, Atom>>( distance, pair<Atom, Atom>( cloud[counter_1], s ) );
                     

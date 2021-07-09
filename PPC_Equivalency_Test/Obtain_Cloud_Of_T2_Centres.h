@@ -14,7 +14,7 @@ void Obtain_Cloud_Of_T2_Centres ( vector<Atom>const& atom_cloud, double ** matri
     
     for (int counter = 0; counter < num_molecules; ++counter)
     {
-        Atom atom_1 = atom_cloud[9 + counter * 23], atom_2 = atom_cloud[22 + counter * 23];
+        Atom atom_1 = atom_cloud[9 + counter * 32], atom_2 = atom_cloud[22 + counter * 32];
         
         T2_centre_cloud.push_back( Atom( counter, (atom_1.frac_coords + atom_2.frac_coords) * 0.5 ) );
         
